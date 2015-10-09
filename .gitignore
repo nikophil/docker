@@ -1,0 +1,18 @@
+# Web
+/web/assetic/
+/web/bundles/
+/web/media/
+/web/uploads/
+
+# Build cache and logs
+/app/bootstrap.php.cache
+/app/cache/*
+/app/logs/*
+/app/sessions/*
+
+# Config
+/app/config/parameters.yml
+/bin/
+
+# Dependencies
+/vendor/

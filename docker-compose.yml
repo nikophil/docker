@@ -1,0 +1,18 @@
+app:
+    build: .
+    volumes:
+        - .:/var/www/docker
+    ports:
+        - 81:80
+    links:
+        - db
+
+db:
+    image: mysql
+    ports:
+        - 3310:3306
+    environment:
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_DATABASE: symfony
+        MYSQL_USER: symfony
+        MYSQL_PASSWORD: symfony
